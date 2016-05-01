@@ -6,15 +6,22 @@ export default class BtnCalc extends React.Component {
 
   }
 
+  handleClick(e) {
+    const val = e.target.value;
+    console.log(val);
+    this.props.updateOutput(val);
+  }
+
   render() {
     let btnPlus = "";
     if(this.props.isPlusBtn) {
       btnPlus = " btn-plus";
     }
     return (
-      <div class={"btn-calc" + btnPlus}>
-        {this.props.value}
-      </div>
+      <input type="button"
+             class={"btn-calc" + btnPlus} 
+             onClick={this.handleClick.bind(this)} 
+             value={this.props.value} />
     );
   }
 }

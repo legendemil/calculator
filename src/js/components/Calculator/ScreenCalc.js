@@ -9,7 +9,7 @@ export default class ScreenCalc extends React.Component {
   render() {
     return (
       <div id="screen-calc">
-        12x5
+        {this.props.output}
       </div>
     );
   }
