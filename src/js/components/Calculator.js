@@ -40,7 +40,7 @@ export default class Calculator extends React.Component {
   }
 
   calculate() {
-    const output = eval(this.state.output);
+    const output = eval(this.state.output) || "";
     this.setState({ output });
   }
   
