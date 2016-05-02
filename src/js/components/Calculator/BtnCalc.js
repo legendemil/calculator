@@ -8,7 +8,7 @@ export default class BtnCalc extends React.Component {
 
   handleClick(e) {
     const val = e.target.value;
-    console.log(val);
+    // console.log(val, this.props);
     this.props.updateOutput(val);
   }
 
