@@ -7,6 +7,10 @@ red2 = #D91E18
 
 btn-height = 60px
 
+none-borders()
+	border none
+	outline none
+
 body 
 	background-color #EEEEEE
 	color #333
@@ -20,19 +24,19 @@ body
 	background #fff
 	box-shadow 12px 12px 30px -20px black	
 	#screen-calc
+		none-borders()
+		max-width @max-width
 		background-color blue
 		color blue3
 		padding 20px
 		font-size 50px
 		text-align right	
-		height 100px
 	#btns-container
 		display flex
 		flex-wrap wrap
 		flex-direction row
 		.btn-calc
-			border none
-			outline none
+			none-borders()
 			cursor pointer
 			height btn-height
 			line-height btn-height
@@ -44,11 +48,6 @@ body
 			&:hover
 				background-color blue2
 				color #fff
-		.btn-plus
-			color #fff
-			background-color red
-			&:hover
-				background-color red2
 
 ::selection
 	background-color blue

@@ -9,9 +9,10 @@ export default class ScreenCalc extends React.Component {
   render() {
     this.output = this.props.output;
     return (
-      <div id="screen-calc">
-        {this.output}
-      </div>
+           <input type="text" 
+                  readOnly 
+                  value={this.output}
+                  id="screen-calc" />
     );
   }
 }
