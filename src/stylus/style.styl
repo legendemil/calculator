@@ -16,16 +16,17 @@ body
 	color #333
 	
 #calculator
+	position relative
 	font-weight 100
 	margin-left auto
 	margin-right auto
 	margin-top 30px
-	max-width 300px
+	width 300px
 	background #fff
 	box-shadow 12px 12px 30px -20px black	
 	#screen-calc
 		none-borders()
-		max-width @max-width
+		max-width @width
 		background-color blue
 		color blue3
 		padding 20px
@@ -48,7 +49,18 @@ body
 			&:hover
 				background-color blue2
 				color #fff
-
+	#info-box
+		opacity 0.1
+		width @width
+		text-align center
+		padding 5px
+		position absolute
+		top 0
+		right 00px
+		background-color #fff
+		img
+			border-radius 100%
+			width (@width / 2)px
 ::selection
 	background-color blue
 	color #fff

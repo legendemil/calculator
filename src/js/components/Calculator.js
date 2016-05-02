@@ -61,6 +61,7 @@ export default class Calculator extends React.Component {
         <div id="btns-container">
           {btnsList}
         </div>
+        <Info />
       </div>
     );
   }
